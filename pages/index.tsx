@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Masthead from '../components/masthead'
 import Aboutus from '../components/aboutus'
+import Skills from '../components/skills'
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       </Head>
       <Masthead/>
       <Aboutus/>
+      <Skills/>
     </div>
   )
 }
