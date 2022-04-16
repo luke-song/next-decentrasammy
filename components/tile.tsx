@@ -16,7 +16,7 @@ export const TileContext = React.createContext<TileContextValue>({
 })
 
 export const TileWrapper: React.FC<WrapperProps> = ({ children, numOfPages }) => {
-    const {scrollY} = useContext(ScrollContext)
+    const { scrollY } = useContext(ScrollContext)
     const refContainer = useRef<HTMLDivElement>(null)
 
     let currentPage = 0
