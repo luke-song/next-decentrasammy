@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Masthead from '../components/masthead'
 import Aboutus from '../components/aboutus'
 import Skills from '../components/skills'
+import Works from '../components/works'
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,8 @@ const Home: NextPage = () => {
       <Masthead/>
       <Aboutus/>
       <Skills/>
+      <Works/>
+      <Aboutus/>
     </div>
   )
 }
