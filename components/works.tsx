@@ -23,7 +23,7 @@ const Works = () => (
 
             <WorkRight progress={progress}>
                 <Image 
-                src="/assets/works/pinkpanda.png"
+                src="/assets/works/sample1.png"
                 layout="responsive"
                 width={840}
                 height={1620}
@@ -45,7 +45,7 @@ const Works = () => (
             </WorkLeft>
             <WorkRight progress={progress}>
                 <Image 
-                src="/assets/works/steakwallet.png"
+                src="/assets/works/sample2.png"
                 layout="responsive"
                 width={840}
                 height={1620}
@@ -65,7 +65,7 @@ const Works = () => (
             </WorkLeft>
             <WorkRight progress={progress}>
                 <Image 
-                src="/assets/works/showtime.png"
+                src="/assets/works/sample3.png"
                 layout="responsive"
                 width={840}
                 height={1620}
