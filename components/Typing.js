@@ -3,6 +3,7 @@ import { useGLTF, useAnimations } from '@react-three/drei';
 
 export default function Model({ ...props }) {
   const group = useRef();
+
   const { nodes, materials, animations } = useGLTF('/typing.glb');
   const { actions } = useAnimations(animations, group);
   useEffect(() => {
@@ -12,7 +13,7 @@ export default function Model({ ...props }) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group>
-        <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
+        <group rotation={[Math.PI / 2, 0, 0]} scale={0.03}>
           <primitive object={nodes.mixamorig9Hips} />
           <skinnedMesh
             geometry={nodes.Ch31_Body.geometry}

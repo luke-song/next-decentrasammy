@@ -10,12 +10,12 @@ import NoSsr from '../components/no-ssr'
 import { Canvas } from '@react-three/fiber'
 import styled from '@emotion/styled'
 import { Suspense } from 'react'
-
+import Form from '../components/form'
 
 const CanvasContainer = styled.div`
   background-color: #ffffff;
   width: 100%;
-  height: 100%;
+  height: 500px;
 `;
 
 
@@ -41,6 +41,7 @@ const Home: NextPage = () => {
       </Canvas>
     </CanvasContainer>
       </NoSsr>
+      <Form/>
     </div>
   )
 }
