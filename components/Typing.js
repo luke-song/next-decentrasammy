@@ -1,10 +1,14 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { useGLTF, useAnimations } from '@react-three/drei';
 
 export default function Model({ ...props }) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF('/typing.glb');
   const { actions } = useAnimations(animations, group);
+  useEffect(() => {
+    console.log(actions);
+    actions.typing.play();
+  });
   return (
     <group ref={group} {...props} dispose={null}>
       <group>
