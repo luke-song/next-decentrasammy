@@ -19,7 +19,6 @@ const CanvasContainer = styled.div`
   height: 900px;
 `;
 
-
 const Home: NextPage = () => {
 
   return (
