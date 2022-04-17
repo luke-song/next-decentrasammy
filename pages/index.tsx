@@ -21,6 +21,7 @@ const CanvasContainer = styled.div`
 
 
 const Home: NextPage = () => {
+
   return (
     <div>
       <Head>
