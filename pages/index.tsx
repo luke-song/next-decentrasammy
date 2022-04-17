@@ -5,11 +5,12 @@ import Masthead from '../components/masthead'
 import Aboutus from '../components/aboutus'
 import Skills from '../components/skills'
 import Works from '../components/works'
-import VoxelTiger from '../components/voxel-tiger'
+import Typing from '../components/typing'
 import NoSsr from '../components/no-ssr'
 import { Canvas } from '@react-three/fiber'
 import styled from '@emotion/styled'
 import { Suspense } from 'react'
+
 
 const CanvasContainer = styled.div`
   background-color: #ffffff;
@@ -34,7 +35,9 @@ const Home: NextPage = () => {
       <NoSsr>
       <CanvasContainer>
       <Canvas fallback={null}>
-        <Suspense><VoxelTiger/></Suspense>
+        <ambientLight intensity={0.6} />
+        <directionalLight intensity={0.5} />
+        <Suspense><Typing/></Suspense>
       </Canvas>
     </CanvasContainer>
       </NoSsr>
