@@ -1,7 +1,9 @@
-import React, { useRef, useContext } from 'react'
+import { mergeThemeOverride } from '@chakra-ui/react'
+import React, { useRef, useContext, Children } from 'react'
 import { ScrollContext } from '../utils/scroll-observer'
 
 interface WrapperProps {
+    children: any
     numOfPages: number
 }
 
