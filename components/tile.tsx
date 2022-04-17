@@ -1,5 +1,5 @@
 import { mergeThemeOverride } from '@chakra-ui/react'
-import React, { useRef, useContext, Children } from 'react'
+import React, { useRef, useContext} from 'react'
 import { ScrollContext } from '../utils/scroll-observer'
 
 interface WrapperProps {
@@ -44,11 +44,11 @@ export const TileWrapper: React.FC<WrapperProps> = ({ children, numOfPages }) =>
 }
 
 
-export const TileBackground: React.FC = ({ children }) => (
+export const TileBackground = ( {children} ) => (
     <div className="absolute h-full w-full">{children}</div>
 )
 
-export const TileContent: React.FC = ({ children }) => (
+export const TileContent = ( {children} ) => (
     <div className="sticky top-0 h-screen overflow-hidden">{children}</div>
 )
 
