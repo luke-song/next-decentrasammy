@@ -15,7 +15,7 @@ import Form from '../components/form'
 const CanvasContainer = styled.div`
   background-color: #ffffff;
   width: 100%;
-  height: 500px;
+  height: 900px;
 `;
 
 
