@@ -1,7 +1,7 @@
 import React from 'react'
-import Link, { LinkProps } from 'next/link'
+import Link from 'next/link'
 
-export const WorkContainer:React.FC = ({ children }) => (
+export const WorkContainer = ({ children }) => (
     <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen">
         {children}
     </div>
@@ -14,7 +14,7 @@ export const WorkBackground: React.FC = () => (
     </div>
 )
 
-export const WorkLeft: React.FC<{ progress: number }> = ({children, progress}) => {
+export const WorkLeft: React.FC<Progress> = ({children, progress}) => {
     let translateY = Math.max(0, 50 - progress * 3 * 50)
     if (progress > 0.85) translateY = Math.max(-50, -(progress - 0.85) * 2 * 50)
     return (
@@ -28,7 +28,12 @@ export const WorkLeft: React.FC<{ progress: number }> = ({children, progress}) =
     )
 }
 
-export const WorkRight: React.FC<{progress:number}> = ({ children, progress }) => {
+interface Progress {
+    children: any
+    progress:number
+}
+
+export const WorkRight: React.FC<Progress> = ({ children, progress }) => {
     let translateY = Math.max(-50, -(progress - 0.5) * 50)
     return (
         <div className='flex flex-1 lg:items-center justify-center h-screen' style={{
@@ -40,9 +45,12 @@ export const WorkRight: React.FC<{progress:number}> = ({ children, progress }) =
     </div>
     )
 }
+
 interface LinkProps {
-    href: string
+    children: any
+    href:string
 }
+
 export const WorkLink: React.FC<LinkProps> = ({ href, children }) => (
     <Link href={href}>
         <a target="_blank" rel="noreferrer" className="underline underline-offset-8 decoration-1">
