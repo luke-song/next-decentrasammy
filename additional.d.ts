@@ -3,4 +3,3 @@ declare namespace NODEJS {
         NEXT_PUBLIC_CONACT_FORM_ENDPOINT_URL: string
     }
 }
-declare module '*.js';
