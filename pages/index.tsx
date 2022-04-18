@@ -5,11 +5,11 @@ import Masthead from '../components/masthead'
 import Aboutus from '../components/aboutus'
 import Skills from '../components/skills'
 import Works from '../components/works'
-import Typing from '../components/typing'
-import NoSsr from '../components/no-ssr'
-import { Canvas } from '@react-three/fiber'
+// import Typing from '../components/typing'
+// import NoSsr from '../components/no-ssr'
+// import { Canvas } from '@react-three/fiber'
 import styled from '@emotion/styled'
-import { Suspense } from 'react'
+// import { Suspense } from 'react'
 import ContactUs from '../components/contactus'
 import Footer from '../components/footer'
 
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
       <Skills/>
       <Works/>
       <Aboutus/>
-      <NoSsr>
+      {/* <NoSsr>
       <CanvasContainer>
       <Canvas fallback={null}>
         <ambientLight intensity={0.6} />
@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         <Suspense><Typing/></Suspense>
       </Canvas>
     </CanvasContainer>
-      </NoSsr>
+      </NoSsr> */}
       <ContactUs/>
       <Footer/>
     </div>
